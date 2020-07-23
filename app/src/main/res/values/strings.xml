@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JamesChristianWira_takehome</string>
+    <string name="empty_placeholder">Hmm.. it\'s empty here\nTry to search something!</string>
+    <string name="searchbar_placeholder">Search Github users</string>
+</resources>
