@@ -42,10 +42,8 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar progressBar;
     Drawable dwSearch, dwClear;
 
-    List<User> users;
     int currentPage = 1;
     int maxResult = 0;
-    boolean isChange = false;
     boolean isPaused = false;
     String currentKeyword = "";
     String lastKeyword = "";
@@ -103,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (charSequence.toString().length() == 0) {
                     edtSearch.setCompoundDrawablesWithIntrinsicBounds(dwSearch, null, null, null);
-                    currentPage = 0;
+                    currentPage = 1;
                     searchAdapter.clearList();
                     searchAdapter.notifyDataSetChanged();
 
