@@ -180,8 +180,7 @@ public class MainActivity extends AppCompatActivity {
                     } else if (response.headers().get("X-Ratelimit-Remaining").equals("0")) {
                         makeToast("You've reached the max limit. Try again in a moment.");
                     } else if (isContinue && maxResult > 0){
-                        searchAdapter.updateResult(response.body().getItems());
-                        searchAdapter.notifyDataSetChanged();
+                        appendResults(response.body().getItems());
                     } else if (maxResult == 0){
                         tvEmpty.setVisibility(View.VISIBLE);
                     }
